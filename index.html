@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz app</title>
+</head>
+<body>
+  <div class="container" id="quizContainer">
+    <div class="flexContainer">
+      <!-- QuizMaster Info Section -->
+      <div class="quizMasterInfo" id="quizMasterInfo">
+        <h1>QuizMaster</h1>
+        <p>Welcome to the QuizMaster Challenge! Test your knowledge now!</p>
+        <button class="btn start-btn" onclick="startQuiz()">Start Quiz</button>
+      </div>
+
+      <!-- Question Area -->
+      <div class="questionArea" id="questionArea" style="display: none;">
+        <div>
+          <h2>QUIZ</h2>
+          <p>Select the most appropriate option</p>
+        </div>
+        <div class="question" id="question"></div>
+
+        <div class="optionFlexContainer">
+          <label class="option"
+            ><input type="radio" name="option" value="1"/>
+            <span id="opt1"></span
+          ></label>
+          <label class="option"
+            ><input type="radio" name="option" value="2"/><span
+              id="opt2"
+            ></span
+          ></label>
+          <label class="option"
+            ><input type="radio" name="option" value="3"/><span
+              id="opt3"
+            ></span
+          ></label>
+          <label class="option"
+            ><input type="radio" name="option" value="4"/><span
+              id="opt4"
+            ></span
+          ></label>
+        </div>
+        <div class="nextButton">
+          <button class="btn" id="nextbtn">Next</button>
+          <button class="btn" id="finalbtn" style="display: none;">Finish</button>
+        </div>
+      </div>
+
+      <!-- Result Area -->
+      <div class="result" id="result" style="display:none;">
+        <span></span>
+        <button class="btn retry-btn" onclick="restartQuiz()">Retry</button>
+      </div>
+    </div>
+  </div>
+  <script src="questions.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

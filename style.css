@@ -1,0 +1,127 @@
+.container {
+  width: 1550px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(247, 210, 247);
+}
+
+.flexContainer {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quizMasterInfo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.questionArea {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60vh;
+  max-width: 1000px;
+  width: 100%;
+  border: 1px solid rgb(143, 131, 255);
+  padding: 1vh;
+  margin: 0 auto;
+}
+h2 {
+  color: rgb(100, 32, 225);
+  text-align: center;
+  margin: 0;
+}
+p {
+  text-align: center;
+}
+
+.question {
+  background-color: rgb(6, 16, 210);
+  border-radius: 1.2rem;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.optionFlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.option {
+  flex: 1 1 45%; 
+  background-color: rgb(102, 156, 249);
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1.2rem;
+}
+.option:hover {
+  background-color: rgb(10, 172, 13);
+  color: rgb(156, 18, 18);
+}
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60vh;
+  width: 80%;
+  border: 1px solid violet;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  border: 1px solid violet;
+  padding: 15px;
+}
+.nextButton {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background-color: rgb(6, 16, 210);
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid violet;
+  border-radius: 0.8rem;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: rgb(44, 140, 46);
+  color: rgb(175, 31, 31);
+}
+
+@media screen and (max-width: 768px) {
+  .optionFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    box-sizing: border-box;
+  }
+  .option {
+    flex: 1;
+    background-color:rgb(100, 32, 225);
+    color: white;
+    margin: 1vh;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    border-radius: 1rem;
+  }
+
+}
